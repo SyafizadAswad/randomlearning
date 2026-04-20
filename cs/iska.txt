@@ -1,0 +1,81 @@
+This is a fantastic choice for a practice project! It scales perfectly from a simple script to a very polished system. Since you're using .NET 8.0, you have some great modern tools at your disposal to make this "Iskandar Tofu Shop" clone feel smooth.
+Here is a logic and implementation breakdown based on your specific requirements:
+1. The Game Loop & State Management
+Since you have a 100-day limit, a for loop is your best friend. However, because the game ends early if you hit 150k yen, you’ll need a way to track your "State."
+The Variable Sandbox: Create a small class or a group of variables at the top to track:
+currentDay (int)
+currentMoney (decimal/int) — Start at 100,000
+targetMoney (150,000)
+The Exit Condition: Inside your loop, check if currentMoney >= 150000. If it is, trigger a "Victory" message and use break; to end the game.
+2. Weather Logic (The "RNG")
+You’ll want to use the Random class to determine the weather before the user decides how much to make.
+Weighted Randomness: In real life (and the original game), it’s not a 33% chance for each. You can implement weights like this:
+C#
+int chance = Random.Shared.Next(1, 101); // 1 to 100
+if (chance <= 60) // 60% chance Sunny
+else if (chance <= 90) // 30% chance Cloudy
+else // 10% chance Rainy
+
+
+The Forecast: To make it fair, show the user a "Forecast" (e.g., "It looks like it might rain") before they input their production number. You could even make the forecast slightly inaccurate to add challenge!
+3. Financial Logic (The Math)
+Your logic for calculating the day's end should follow this flow:
+Input: How many pieces to make ($M$).
+Cost: Immediately subtract $(M \times 40)$ from currentMoney.
+Sales Capacity: Determine max sales ($S_{max}$) based on weather (350, 150, or 70).
+Actual Sold: Use Math.Min(M, S_max). You can't sell more than you made, and you can't sell more than the weather allows.
+Revenue: Add $(ActualSold \times 70)$ to currentMoney.
+Waste: Any tofu not sold is "thrown away" (lost money), which is handled naturally because you already paid the cost up front.
+Ideas to make it "Interesting"
+Since you are allowed to add features, here are a few that fit the "System Engineer" mindset:
+The "Secret" Iskandar Ending: If the player reaches day 100 but hasn't hit 150k yen, give them a "Game Over" screen where they are stuck on Earth. If they hit 150k, show an ASCII art of a spaceship taking off for Iskandar!
+Upgrades (Equipment):
+Let the user spend 10k yen to buy a "Better Fridge." This could allow them to carry over 20% of unsold tofu to the next day instead of throwing it all away.
+Weather Events:
+Typhoon: 0 sales possible, but maybe tofu costs 50% less to make that day because people are desperate?
+Festival: Sales capacity doubles for one day.
+Save/Load System: Since you just learned file I/O, let the user save their progress (Day, Money) to a .txt file so they can resume their 100-day journey later.
+Visual Polish (Console Colors): Use Console.ForegroundColor to make Sunny days Yellow, Cloudy days Gray, and Rainy days Blue. It makes a huge difference in a console app.
+Implementation Tip: Int vs Decimal
+Since you are dealing with Yen (which doesn't use decimals/cents), using int or long is perfectly fine and keeps the math simple. If you decide to add "Tax" or "Interest" later, decimal is the professional standard for currency in C#.
+
+—-----------------------------------------
+
+The gameflow of **Iskandar no Tofuya Game** is a classic "command-and-response" loop. Since it was originally a text-based BASIC game, the rhythm of the game depends on how well you interpret simple data to make a single, daily decision.
+
+Here is the step-by-step flow of a typical game day:
+
+### 1. The Morning Briefing (Information Gathering)
+Every turn represents one day. Before you take any action, the game presents you with two critical variables:
+* **The Weather Forecast:** You’ll see a prediction for the day (e.g., Clear, Cloudy, or Rainy). Weather is the primary driver of demand. In many versions, hot/clear days result in higher tofu sales.
+* **Current Funds:** You see how much cash you have available to buy raw materials.
+
+### 2. The Production Phase (Decision Making)
+This is the core "risk vs. reward" moment of the game. The computer asks: 
+> **"How many blocks of tofu will you make today?"**
+
+* **The Cost:** Each block costs a fixed amount of money to produce.
+* **The Gamble:** You must cross-reference the weather forecast with your remaining budget. If you produce 100 blocks but the weather turns bad and only 40 people buy tofu, you lose the investment on the remaining 60 blocks because **tofu spoils overnight.**
+
+### 3. The Sales Phase (The Calculation)
+Once you enter your number, the game processes the "Sales Engine." It generates a random number for customer traffic, heavily weighted by that day’s weather.
+* **Success:** If demand is 80 and you made 80, you maximize profit.
+* **Stockout:** If demand is 100 but you only made 50, you "sell out," but you missed out on the profit of those extra 50 customers.
+* **Waste:** If demand is 30 but you made 100, the leftover 70 blocks are discarded, often resulting in a net loss for the day.
+
+### 4. The End-of-Day Report
+The game displays your results:
+* Total sales for the day.
+* Profit or loss.
+* Your new total balance.
+
+### 5. The Victory Condition
+The loop repeats until one of two things happens:
+* **Victory:** You reach the target amount (usually **100,000 Yen**) required to buy your ticket back to Earth.
+* **Bankruptcy:** Your funds drop so low that you can no longer afford to produce enough tofu to make a profit.
+
+---
+
+### The "Strategy"
+Because the game uses a simple random number generator (RNG) influenced by weather, seasoned players eventually learn the "average" demand for each weather type. The game becomes an exercise in **probability management**—staying conservative during rainy days and "betting big" when the sun is out.
+
