@@ -1,89 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Task Dashboard</title>
-  <link rel="stylesheet" href="css/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Task Manager</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="app">
+    <div class="container">
+        <header>
+            <h1>Task Board</h1>
+            <button id="openModalBtn" class="btn-primary">+ Add Task</button>
+        </header>
 
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <h2 class="logo">TASKS</h2>
-    <nav>
-      <a class="active">Task List</a>
-      <a>Task Page</a>
-      <a>New Task</a>
-      <a>Task Progress</a>
-      <a>Editing of a task</a>
-      <a>Adding a comment</a>
-    </nav>
-  </aside>
+        <div class="task-table">
+            <div class="table-row header">
+                <div class="col-check"><input type="checkbox" id="selectAll"></div>
+                <div class="col-name">Task Name</div>
+                <div class="col-status">Status</div>
+                <div class="col-priority">Priority</div>
+                <div class="col-date">Deadline</div>
+                <div class="col-memo">Memo</div>
+                <div class="col-actions"></div>
+            </div>
 
-  <!-- Main Content -->
-  <main class="main">
-    <header class="header">
-      <h1>All Tasks</h1>
-    </header>
-
-    <section class="task-list">
-
-      <!-- Task Item -->
-      <div class="task">
-        <input type="checkbox"/>
-        <span class="title">Make a Wireframe</span>
-
-        <div class="progress">
-          <span class="bar blue" style="width:40%"></span>
+            <div id="taskList">
+                </div>
         </div>
+    </div>
 
-        <span class="priority high">High</span>
-        <span class="status">In Progress</span>
-      </div>
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <h3>Add New Task</h3>
+            <form id="taskForm">
+                <input type="text" id="taskName" placeholder="Task Name" required>
+                
+                <div class="form-row">
+                    <select id="taskStatus" required>
+                        <option value="" disabled selected>Status</option>
+                        <option value="To Do">To Do</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Review">Review</option>
+                        <option value="Done">Done</option>
+                    </select>
 
-      <div class="task active">
-        <input type="checkbox"/>
-        <span class="title">Video Apps Redesign</span>
+                    <select id="taskPriority" required>
+                        <option value="" disabled selected>Priority</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                        <option value="Urgent">Urgent</option>
+                    </select>
+                </div>
 
-        <div class="progress">
-          <span class="bar green" style="width:60%"></span>
+                <input type="date" id="taskDeadline" required>
+                <textarea id="taskMemo" placeholder="Enter memo details..." rows="3"></textarea>
+
+                <div class="modal-buttons">
+                    <button type="button" id="closeModalBtn" class="btn-secondary">Cancel</button>
+                    <button type="submit" class="btn-primary">Submit Task</button>
+                </div>
+            </form>
         </div>
+    </div>
 
-        <span class="priority medium">Medium</span>
-        <span class="status">In Progress</span>
-      </div>
-
-      <div class="task">
-        <input type="checkbox"/>
-        <span class="title">Website Design</span>
-
-        <div class="progress">
-          <span class="bar blue" style="width:50%"></span>
-        </div>
-
-        <span class="priority low">Low</span>
-        <span class="status">In Progress</span>
-      </div>
-
-      <div class="task">
-        <input type="checkbox"/>
-        <span class="title">Meeting CEO</span>
-
-        <div class="progress">
-          <span class="bar red" style="width:30%"></span>
-        </div>
-
-        <span class="priority high">High</span>
-        <span class="status">In Progress</span>
-      </div>
-
-    </section>
-  </main>
-
-</div>
-
+    <script src="script.js"></script>
 </body>
 </html>
