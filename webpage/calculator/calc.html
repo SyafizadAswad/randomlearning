@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .calculator-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        input, select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 80px;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            background-color: #e9ecef;
+            font-weight: bold;
+            min-width: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator-container">
+    <input type="text" id="numA" placeholder="Num A">
+    
+    <select id="operation">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+
+    <input type="text" id="numB" placeholder="Num B">
+    
+    <button onclick="calculate()">=</button>
+
+    <input type="text" id="result" placeholder="Result" readonly>
+</div>
+
+<script>
+    function calculate() {
+        // Grab elements
+        const numA = document.getElementById('numA').value;
+        const numB = document.getElementById('numB').value;
+        const op = document.getElementById('operation').value;
+        const resultField = document.getElementById('result');
+
+        // Validation: Check if inputs are empty strings
+        if (numA === "" || numB === "") {
+            alert("Please insert value");
+            return;
+        }
+
+        // Convert strings to numbers for math
+        const valA = parseFloat(numA);
+        const valB = parseFloat(numB);
+        let res;
+
+        // Calculation logic
+        switch (op) {
+            case '+': res = valA + valB; break;
+            case '-': res = valA - valB; break;
+            case '*': res = valA * valB; break;
+            case '/': 
+                res = valB !== 0 ? valA / valB : "Error (Div by 0)";
+                break;
+            case '%': res = valA % valB; break;
+            default: res = 0;
+        }
+
+        // Output result
+        resultField.value = res;
+    }
+</script>
+
+</body>
+</html>
