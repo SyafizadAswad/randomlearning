@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C10EDBA5-F550-4FC1-AC55-2A719F200CF0}|EmployeesAPI\\EmployeesAPI.csproj|c:\\users\\syafi\\desktop\\personalproject\\c#\\seriobasic\\aspnetcore\\employeesapi\\employeesapi\\model\\employeerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C10EDBA5-F550-4FC1-AC55-2A719F200CF0}|EmployeesAPI\\EmployeesAPI.csproj|solutionrelative:employeesapi\\model\\employeerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C10EDBA5-F550-4FC1-AC55-2A719F200CF0}|EmployeesAPI\\EmployeesAPI.csproj|c:\\users\\syafi\\desktop\\personalproject\\c#\\seriobasic\\aspnetcore\\employeesapi\\employeesapi\\logic\\employeelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C10EDBA5-F550-4FC1-AC55-2A719F200CF0}|EmployeesAPI\\EmployeesAPI.csproj|solutionrelative:employeesapi\\logic\\employeelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D64CB94-1DB5-49BD-9825-D55CD44AE96F}|EmployeesDataAccess\\EmployeesDataAccess.csproj|c:\\users\\syafi\\desktop\\personalproject\\c#\\seriobasic\\aspnetcore\\employeesapi\\employeesdataaccess\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D64CB94-1DB5-49BD-9825-D55CD44AE96F}|EmployeesDataAccess\\EmployeesDataAccess.csproj|solutionrelative:employeesdataaccess\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D64CB94-1DB5-49BD-9825-D55CD44AE96F}|EmployeesDataAccess\\EmployeesDataAccess.csproj|c:\\users\\syafi\\desktop\\personalproject\\c#\\seriobasic\\aspnetcore\\employeesapi\\employeesdataaccess\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D64CB94-1DB5-49BD-9825-D55CD44AE96F}|EmployeesDataAccess\\EmployeesDataAccess.csproj|solutionrelative:employeesdataaccess\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C10EDBA5-F550-4FC1-AC55-2A719F200CF0}|EmployeesAPI\\EmployeesAPI.csproj|c:\\users\\syafi\\desktop\\personalproject\\c#\\seriobasic\\aspnetcore\\employeesapi\\employeesapi\\interfaces\\iemployeelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C10EDBA5-F550-4FC1-AC55-2A719F200CF0}|EmployeesAPI\\EmployeesAPI.csproj|solutionrelative:employeesapi\\interfaces\\iemployeelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D64CB94-1DB5-49BD-9825-D55CD44AE96F}|EmployeesDataAccess\\EmployeesDataAccess.csproj|c:\\users\\syafi\\desktop\\personalproject\\c#\\seriobasic\\aspnetcore\\employeesapi\\employeesdataaccess\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D64CB94-1DB5-49BD-9825-D55CD44AE96F}|EmployeesDataAccess\\EmployeesDataAccess.csproj|solutionrelative:employeesdataaccess\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C10EDBA5-F550-4FC1-AC55-2A719F200CF0}|EmployeesAPI\\EmployeesAPI.csproj|c:\\users\\syafi\\desktop\\personalproject\\c#\\seriobasic\\aspnetcore\\employeesapi\\employeesapi\\model\\employeeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C10EDBA5-F550-4FC1-AC55-2A719F200CF0}|EmployeesAPI\\EmployeesAPI.csproj|solutionrelative:employeesapi\\model\\employeeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesDataAccess\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeesDataAccess\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesDataAccess\\Models\\Employee.cs",
+              "RelativeToolTip": "EmployeesDataAccess\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:14:10.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmployeeResponse.cs",
+              "DocumentMoniker": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesAPI\\Model\\EmployeeResponse.cs",
+              "RelativeDocumentMoniker": "EmployeesAPI\\Model\\EmployeeResponse.cs",
+              "ToolTip": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesAPI\\Model\\EmployeeResponse.cs",
+              "RelativeToolTip": "EmployeesAPI\\Model\\EmployeeResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:12:34.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeLogic.cs",
+              "DocumentMoniker": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesAPI\\Logic\\EmployeeLogic.cs",
+              "RelativeDocumentMoniker": "EmployeesAPI\\Logic\\EmployeeLogic.cs",
+              "ToolTip": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesAPI\\Logic\\EmployeeLogic.cs",
+              "RelativeToolTip": "EmployeesAPI\\Logic\\EmployeeLogic.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:08:40.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesDataAccess\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "EmployeesDataAccess\\Interfaces\\IEmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesDataAccess\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeToolTip": "EmployeesDataAccess\\Interfaces\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T00:22:01.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesDataAccess\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "EmployeesDataAccess\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesDataAccess\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "EmployeesDataAccess\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:09:06.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IEmployeeLogic.cs",
+              "DocumentMoniker": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesAPI\\Interfaces\\IEmployeeLogic.cs",
+              "RelativeDocumentMoniker": "EmployeesAPI\\Interfaces\\IEmployeeLogic.cs",
+              "ToolTip": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesAPI\\Interfaces\\IEmployeeLogic.cs",
+              "RelativeToolTip": "EmployeesAPI\\Interfaces\\IEmployeeLogic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T00:40:46.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeRequest.cs",
+              "DocumentMoniker": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesAPI\\Model\\EmployeeRequest.cs",
+              "RelativeDocumentMoniker": "EmployeesAPI\\Model\\EmployeeRequest.cs",
+              "ToolTip": "C:\\Users\\syafi\\Desktop\\PersonalProject\\c#\\seriobasic\\aspnetcore\\EmployeesAPI\\EmployeesAPI\\Model\\EmployeeRequest.cs",
+              "RelativeToolTip": "EmployeesAPI\\Model\\EmployeeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T00:29:45.594Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
